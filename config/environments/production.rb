@@ -26,6 +26,7 @@ Blog::Application.configure do
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
+  config.assets.precompile += %w( new_manifest.css )
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
